@@ -1,0 +1,341 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
+.patient-profile {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.patient-name {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+#patient-details {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.patient-info {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.patient-info p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.assessment-type-toggle {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.toggle-button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #3498db;
+  background-color: white;
+  color: #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.toggle-button:hover {
+  background-color: #f0f7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+.toggle-button.active {
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.assessments-section {
+  margin-top: 1rem;
+}
+
+.assessments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.assessment-card {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.assessment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f1f3f4;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.assessment-header h4 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.assessment-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  background-color: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.assessment-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-button, .save-button, .cancel-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.edit-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;
+}
+
+.save-button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: #219653;
+}
+
+.save-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.back-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.gp-assessment-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.gp-box {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+
+.gp-box-header {
+  background-color: #f8f9fa;
+  padding: 1rem 1.25rem;
+  border-bottom: 2px solid #e9ecef;
+  display: flex;
+  align-items: center;
+}
+
+.gp-box-header h5 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.gp-box-header i {
+  color: #3498db;
+  font-size: 1.1rem;
+}
+
+.gp-box-content {
+  padding: 1.25rem;
+}
+
+.gp-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.gp-field:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.gp-field-label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+  min-width: 120px;
+  margin-right: 1rem;
+}
+
+.gp-field .missing-value {
+  background-color: #ffebee;
+  color: #e74c3c;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.mobile-assessment-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.field-item {
+  height: 100%;
+}
+
+.field-item .card {
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.field-item .card:hover {
+  border-color: #3498db;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.1);
+}
+
+.field-item .badge {
+  font-size: 0.85rem;
+  padding: 0.4em 0.8em;
+}
+
+.edit-fields-section {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #3498db;
+  margin-bottom: 1.5rem;
+}
+
+.edit-fields-section h5 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.edit-fields-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-field label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.edit-field input, .edit-field select {
+  padding: 0.5rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.edit-field input:focus, .edit-field select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+
+
+.missing-value {
+  color: #e74c3c;
+  font-style: italic;
+  background-color: #ffebee;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+.test-score-chart-container {
+  height: 250px;
+  position: relative;
+}
+
+.chart-progress-bar {
+  height: 12px;
+}
+
+.chart-progress-bar .progress-bar {
+  border-radius: 6px;
+}
+

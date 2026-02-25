@@ -1,0 +1,5 @@
+.chatbot-widget { position: fixed; right: 20px; bottom: 20px; z-index: 1000; }
+.chatbot-toggle { background:#0069ff;color:#fff;border:none;border-radius:20px;padding:10px 14px;cursor:pointer; }
+.chatbot-panel { width:320px; height:420px; background:#fff; box-shadow:0 8px 24px rgba(0,0,0,.2); border-radius:8px; overflow:hidden; margin-bottom:8px; }
+.chatbot-header { padding:10px; background:#f6f8fb; font-weight:600; border-bottom:1px solid #eee; }
+.chatbot-body { padding:12px; height: calc(100% - 44px); overflow:auto; }

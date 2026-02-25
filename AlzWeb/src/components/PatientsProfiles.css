@@ -1,0 +1,80 @@
+.patient-profiles .content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.patient-profiles header {
+  margin-bottom: 2rem;
+}
+
+.patient-profiles h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+.click-button {
+  background-color: #3498db;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.patient-profiles header p {
+  color: #666;
+}
+
+.patients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.patient-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.patient-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.patient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.patient-header h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.25rem;
+}
+.patient-info {
+  margin-bottom: 1.5rem;
+}
+
+.patient-info p {
+  margin-bottom: 0.5rem;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.patient-info strong {
+  color: #333;
+}
+
+.patient-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
